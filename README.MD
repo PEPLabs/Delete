@@ -1,34 +1,12 @@
-# Background
-SQL sublanguage: DML (Data Manipulation Language)
-
-The `DELETE` keyword is utilized to remove records based on a condition.
-
-The syntax for deleting records from a table is as follows:
+# Delete lab
+This lab covers how to delete or truncate records from a table in a database.
+# Files to modify
+You should modify only the lab1.sql and lab2.sql files, found under the src/main folder.
+Instructions are provided in the lab.sql file.
+When you write your SQL statement, you should write it below the provided instructions as follows:
 ```sql
- DELETE FROM table_name WHERE condition;
- ```
-
-NOTE: Whenever you execute a `DELETE` statement, have a `WHERE` condition that identifies exactly what records you would like to delete.
-Leaving this out will remove ALL records from the table.
-
-Additional resource if needed: https://www.w3schools.com/sql/sql_delete.asp
-
-- - - 
-
-# Lab
-
-## Problem 1
-site_user table:
+-- sample comments
+-- TODO: write a sql statement below
+select * from table;
 ```
-|   id  |     firstname        |
-|-------|----------------------|
-|1      |'Steve'               |
-|2      |'Alexa'               |
-|3      |'Steve'               |
-|4      |'Brandon'             |
-|5      |'Adam'                |
-```
-
-#### Problem 1: Delete everyone named "Steve" from the site_user table in problem1.sql
-
-- - -
+with `select * from table` representing your answer in the lab.sql file.

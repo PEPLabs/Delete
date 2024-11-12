@@ -1,21 +1,23 @@
+package Model;
 
 import java.util.Objects;
 
-public class User {
+public class Person {
     private int id;
     private String firstname;
 
-    public User() {
+    public Person() {
     }
 
-    public User(String firstname) {
+    public Person(String firstname) {
         this.firstname = firstname;
     }
 
-    public User(int id, String firstname) {
+    public Person(int id, String firstname) {
         this.id = id;
         this.firstname = firstname;
     }
+
 
     public int getId() {
         return id;
@@ -38,8 +40,8 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id && Objects.equals(firstname, user.firstname);
+        Person person = (Person) o;
+        return id == person.id && Objects.equals(firstname, person.firstname);
     }
 
     @Override
@@ -49,7 +51,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Model.Person{" +
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 '}';
